@@ -8,8 +8,8 @@
 <meta property="og:title" content="Faris Al-Danish | IT Infrastructure &amp; Systems Engineer">
 <meta property="og:description" content="Windows Server, Active Directory, Entra ID, networking and monitoring across multi-site infrastructure.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://faris-alghamdi7.github.io/">
-<link rel="canonical" href="https://faris-alghamdi7.github.io/">
+<meta property="og:url" content="https://faris-al-danish.github.io/">
+<link rel="canonical" href="https://faris-al-danish.github.io/">
 <title>Faris Al-Danish | IT Infrastructure &amp; Systems Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -118,7 +118,7 @@ h3{font-family:Sora,sans-serif;font-weight:700}
 .tilt{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
 /* about */
 .ab{display:grid;grid-template-columns:300px 1fr;gap:44px;align-items:center}
-.ph{position:relative;width:100%;max-width:300px;aspect-ratio:1;padding:6px;border-radius:36px}
+.ph{position:relative;width:100%;max-width:300px;aspect-ratio:1;padding:6px;border-radius:36px;overflow:visible}
 .ph img{width:100%;height:100%;object-fit:cover;border-radius:30px;display:block;position:relative;z-index:1}
 .fb{position:absolute;z-index:3;background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:14px;padding:6px 12px;font-size:.78rem;font-weight:600;white-space:nowrap;animation:fy 5s ease-in-out infinite alternate}
 .fb.a{left:-14px;top:22px}
@@ -211,6 +211,41 @@ h3{font-family:Sora,sans-serif;font-weight:700}
 #toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--glass);backdrop-filter:blur(12px);border:1px solid var(--acc);color:var(--ink);padding:10px 20px;border-radius:14px;opacity:0;transition:opacity .3s,transform .3s;z-index:80;pointer-events:none;font-size:.92rem}
 #toast.s{opacity:1;transform:translate(-50%,0)}
 footer{text-align:center;color:var(--mute);padding:90px 0 60px;font-size:.9rem}
+
+:root{--ok:#2dff9a}:root[data-theme="light"]{--ok:#0a8a4f}
+.cs{padding:clamp(16px,3vw,32px)}
+.csv{overflow:hidden}
+.csv svg{width:100%;max-width:860px;margin:0 auto;height:auto;display:block;overflow:visible}
+@media (max-width:620px){.csv svg{width:100%;max-width:none;margin-left:0}}
+.cs .e{opacity:.1;transition:opacity .7s}
+.cs svg[data-l="all"] .e,.cs svg[data-l="conn"] .e-conn,.cs svg[data-l="sec"] .e-sec,.cs svg[data-l="id"] .e-id,.cs svg[data-l="mon"] .e-mon{opacity:1}
+.tun{stroke:var(--acc);stroke-width:2.2;stroke-dasharray:7 9;animation:fw2 1.2s linear infinite}
+.pol{stroke:var(--acc2);stroke-width:1.6;stroke-dasharray:2 10;stroke-linecap:round;animation:fw2 1.8s linear infinite reverse}
+@keyframes fw2{to{stroke-dashoffset:-32}}
+.ring{fill:color-mix(in srgb,var(--ok) 6%,transparent);stroke:var(--ok);stroke-width:2;stroke-dasharray:3 7;animation:fw2 2.4s linear infinite}
+.mline{stroke:var(--hot);stroke-width:2;stroke-dasharray:4 5;animation:fw2 1s linear infinite reverse}
+.rp{fill:none;stroke:var(--hot);stroke-width:2;transform-box:fill-box;transform-origin:center;animation:rpa 2.6s ease-out infinite}
+@keyframes rpa{0%{transform:scale(1);opacity:.9}100%{transform:scale(1.9);opacity:0}}
+.hq rect{fill:var(--bg);stroke:var(--acc);stroke-width:2.5;filter:drop-shadow(0 0 14px color-mix(in srgb,var(--acc) 45%,transparent))}
+.hq text{fill:var(--ink);text-anchor:middle;font-family:Sora,sans-serif}
+.hq .t1{font-size:22px;font-weight:700}.hq .t2{font-size:15px;fill:var(--mute);font-weight:400;font-family:Inter,sans-serif}
+.bn circle{fill:var(--bg);stroke:var(--acc);stroke-width:2.2}
+.bn text{fill:var(--ink);text-anchor:middle;font-family:Sora,sans-serif;font-weight:700;font-size:20px}
+.chip rect{fill:var(--bg);stroke-width:2}
+.chip text{text-anchor:middle;font-family:Inter,sans-serif;font-weight:600;font-size:17px;fill:var(--ink)}
+.chip.g rect{stroke:var(--ok)}.chip.v rect{stroke:var(--acc2)}.chip.h rect{stroke:var(--hot)}
+.cst{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.ct{font:inherit;font-weight:500;font-size:.92rem;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--mute);cursor:pointer;transition:all .25s}
+.ct:hover{color:var(--ink);border-color:var(--acc)}
+.ct.on{color:var(--ink);border-color:transparent;background:linear-gradient(120deg,color-mix(in srgb,var(--acc) 24%,transparent),color-mix(in srgb,var(--acc2) 24%,transparent));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--acc) 55%,transparent)}
+.csp{margin-top:16px;padding:20px 22px;border-radius:18px;border:1px solid var(--line);background:var(--card);min-height:170px}
+.csp h3{font-size:1.25rem;margin-bottom:10px}
+.csp ul{list-style:none;padding:0;display:grid;gap:8px}
+.csp li{color:var(--mute);padding-left:22px;position:relative}
+.csp li::before{content:"";position:absolute;left:0;top:.72em;width:10px;height:2px;background:var(--acc)}
+.csp.sw>*{animation:cp .5s cubic-bezier(.2,.8,.2,1) both}
+.cnote{margin-top:12px;font-size:.8rem;color:var(--mute)}
+@media (max-width:520px){.ct{padding:7px 13px;font-size:.86rem}.csp{padding:16px}}
 /* responsive */
 @media (max-width:860px){
 .ab{grid-template-columns:1fr;justify-items:center;text-align:left;gap:34px}
@@ -230,7 +265,8 @@ section{padding-top:84px}
 .tl{padding-left:30px}.jh::before{left:-41px}
 .hero{padding-bottom:80px}
 }
-@media (max-width:520px){.pjh{gap:18px}.radar{width:120px;height:120px}.nl .l{transition-delay:calc(var(--i)*40ms + 100ms)}}
+@media (max-width:860px){.cue{display:none}.ph{overflow:visible}.term{white-space:normal;align-items:flex-start;min-height:74px}.term b{flex:0 1 auto;min-width:0;word-break:break-word}.pbox{padding:20px}}
+@media (max-width:520px){nav{max-width:calc(100% - 16px)}.ni{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent);padding-right:22px}.fb.a{left:-6px}.fb.b{right:-6px}.pjh{gap:18px}.radar{width:120px;height:120px}.nl .l{transition-delay:calc(var(--i)*40ms + 100ms)}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hr,.sg{opacity:1;translate:none;scale:1}.nl .l{transform:none}#pre,#ring,#dot{display:none}}
 </style>
 </head>
@@ -243,7 +279,7 @@ section{padding-top:84px}
 
 <nav aria-label="Sections"><div class="ni">
 <a class="mono-l" href="#top" aria-label="Home">FA</a>
-<a href="#about">About</a><a href="#why">Strengths</a><a href="#skills">Skills</a><a href="#exp">Experience</a><a href="#project">SHALFA</a><a href="#creds">Credentials</a><a href="#contact">Contact</a>
+<a href="#about">About</a><a href="#why">Strengths</a><a href="#skills">Skills</a><a href="#exp">Experience</a><a href="#casestudy">Case Study</a><a href="#project">SHALFA</a><a href="#creds">Credentials</a><a href="#contact">Contact</a>
 <button id="tg" type="button" aria-label="Switch between light and dark theme">◐</button>
 </div></nav>
 
@@ -287,7 +323,33 @@ section{padding-top:84px}
 <section id="exp" class="rv"><p class="eyebrow">04 / Career</p><h2 data-t="Professional Experience"></h2>
 <div class="tl" id="tl"><div class="ln" id="ln"></div><article class="job gb sg tilt"><div class="jh"><span class="pill">April 2024 – Present</span><h3>IT Infrastructure &amp; Systems Engineer</h3><div class="co">Jalsat Company</div><p class="meta">Full-time · On-site · Al-Baha, Saudi Arabia</p></div><p class="intro">Managed, secured, and optimized multi-branch IT infrastructure across 8 locations, ensuring 99.9% uptime for core enterprise services and Point-of-Sale (POS) systems.</p><ul><li><b>Directory &amp; Systems Administration:</b> Administered Windows Server environments and Active Directory domain controllers, implementing GPOs for centralized security compliance and software deployment.</li><li><b>Network &amp; Security Operations:</b> Configured and maintained office network devices, firewalls, and managed VLAN segmentation and secure VPN tunnels for branch connectivity.</li><li><b>Monitoring &amp; Performance:</b> Deployed Zabbix and Grafana to monitor server health, resource utilization (CPU, RAM, Disk), and network bottlenecks proactively.</li><li><b>Backup &amp; Automation:</b> Executed structured Windows Server backups and system state recovery plans; leveraged PowerShell scripts to automate user provisioning and routine administrative tasks.</li><li><b>Technical Support &amp; SLA Compliance:</b> Provided tier-2 technical support for 16+ enterprise employees, resolving complex hardware, software, and connectivity issues within strict SLA timeframes.</li></ul></article><article class="job gb sg tilt"><div class="jh"><span class="pill">June 2025 – August 2025</span><h3>Network Engineer Trainee</h3><div class="co">Al-Alaa National Trading Co</div><p class="meta">Internship · On-site · Jeddah, Saudi Arabia</p></div><p class="intro">Contributed to the deployment, maintenance, and security hardening of enterprise network infrastructure and core routing systems.</p><ul><li><b>Routing &amp; Switching:</b> Configured Cisco routers and switches, implementing advanced VLAN segmentation, IP subnetting, and static/dynamic routing protocols to optimize traffic flow.</li><li><b>Network Security &amp; Firewalls:</b> Assisted in configuring Palo Alto firewall policies, NAT rules, and managing secure remote access protocols.</li><li><b>Traffic Analysis &amp; Troubleshooting:</b> Utilized Wireshark and network monitoring tools to analyze packet captures, diagnose latency issues, and mitigate connectivity bottlenecks.</li><li><b>Infrastructure Maintenance:</b> Supported structured cabling, hardware installations, and server rack maintenance in compliance with enterprise data center standards.</li></ul></article></div></section>
 
-<section id="project" class="rv"><p class="eyebrow">05 / Featured project</p><h2 data-t="SHALFA"></h2>
+<section id="casestudy" class="rv"><p class="eyebrow">05 / Case study</p><h2 data-t="Running 8 branches as one network"></h2>
+<p class="lead sg" style="max-width:60ch">How I keep a multi-branch company online: one head office, eight branches, and four layers working together. Tap a layer to see what it does.</p>
+<div class="cs gb sg">
+<div class="csv"><svg id="csv" data-l="all" viewBox="0 0 760 520" role="img" aria-label="Simplified diagram: one head office connected to eight branches by secure VPN tunnels, protected by firewalls, managed with Active Directory and monitored with Zabbix and Grafana">
+<line class="e e-conn tun" x1="380" y1="260" x2="491.0" y2="70.6"/><line class="e e-conn tun" x1="380" y1="260" x2="647.9" y2="181.5"/><line class="e e-conn tun" x1="380" y1="260" x2="647.9" y2="338.5"/><line class="e e-conn tun" x1="380" y1="260" x2="491.0" y2="449.4"/><line class="e e-conn tun" x1="380" y1="260" x2="269.0" y2="449.4"/><line class="e e-conn tun" x1="380" y1="260" x2="112.1" y2="338.5"/><line class="e e-conn tun" x1="380" y1="260" x2="112.1" y2="181.5"/><line class="e e-conn tun" x1="380" y1="260" x2="269.0" y2="70.6"/><line class="e e-id pol" x1="380" y1="260" x2="491.0" y2="70.6"/><line class="e e-id pol" x1="380" y1="260" x2="647.9" y2="181.5"/><line class="e e-id pol" x1="380" y1="260" x2="647.9" y2="338.5"/><line class="e e-id pol" x1="380" y1="260" x2="491.0" y2="449.4"/><line class="e e-id pol" x1="380" y1="260" x2="269.0" y2="449.4"/><line class="e e-id pol" x1="380" y1="260" x2="112.1" y2="338.5"/><line class="e e-id pol" x1="380" y1="260" x2="112.1" y2="181.5"/><line class="e e-id pol" x1="380" y1="260" x2="269.0" y2="70.6"/>
+<ellipse class="e e-sec ring" cx="380" cy="260" rx="125" ry="80"/>
+<line class="e e-mon mline" x1="455" y1="260" x2="460" y2="260"/>
+<circle class="e e-mon rp" cx="491.0" cy="70.6" r="24" style="animation-delay:0.0s"/><circle class="e e-mon rp" cx="647.9" cy="181.5" r="24" style="animation-delay:0.35s"/><circle class="e e-mon rp" cx="647.9" cy="338.5" r="24" style="animation-delay:0.7s"/><circle class="e e-mon rp" cx="491.0" cy="449.4" r="24" style="animation-delay:1.0499999999999998s"/><circle class="e e-mon rp" cx="269.0" cy="449.4" r="24" style="animation-delay:1.4s"/><circle class="e e-mon rp" cx="112.1" cy="338.5" r="24" style="animation-delay:1.75s"/><circle class="e e-mon rp" cx="112.1" cy="181.5" r="24" style="animation-delay:2.0999999999999996s"/><circle class="e e-mon rp" cx="269.0" cy="70.6" r="24" style="animation-delay:2.4499999999999997s"/>
+<g class="hq"><rect x="305" y="218" width="150" height="84" rx="20"/><text x="380" y="256" class="t1">Head office</text><text x="380" y="282" class="t2">Core services</text></g>
+<g class="bn"><circle cx="491.0" cy="70.6" r="24"/><text x="491.0" y="78.6">1</text></g><g class="bn"><circle cx="647.9" cy="181.5" r="24"/><text x="647.9" y="189.5">2</text></g><g class="bn"><circle cx="647.9" cy="338.5" r="24"/><text x="647.9" y="346.5">3</text></g><g class="bn"><circle cx="491.0" cy="449.4" r="24"/><text x="491.0" y="457.4">4</text></g><g class="bn"><circle cx="269.0" cy="449.4" r="24"/><text x="269.0" y="457.4">5</text></g><g class="bn"><circle cx="112.1" cy="338.5" r="24"/><text x="112.1" y="346.5">6</text></g><g class="bn"><circle cx="112.1" cy="181.5" r="24"/><text x="112.1" y="189.5">7</text></g><g class="bn"><circle cx="269.0" cy="70.6" r="24"/><text x="269.0" y="78.6">8</text></g>
+<g class="e e-sec chip g"><rect x="324.0" y="164" width="112" height="32" rx="16"/><text x="380" y="186">Firewall</text></g>
+<g class="e e-sec chip g"><rect x="327.0" y="324" width="106" height="32" rx="16"/><text x="380" y="346">VLANs</text></g>
+<g class="e e-id chip v"><rect x="159.0" y="244" width="112" height="32" rx="16"/><text x="215" y="266">AD · GPO</text></g>
+<g class="e e-mon chip h"><rect x="460.0" y="244" width="150" height="32" rx="16"/><text x="535" y="266">Zabbix · Grafana</text></g>
+</svg></div>
+<div class="cst" role="tablist" aria-label="Network layers">
+<button class="ct on" type="button" role="tab" aria-selected="true" data-l="all">Overview</button>
+<button class="ct" type="button" role="tab" aria-selected="false" data-l="conn">Connectivity</button>
+<button class="ct" type="button" role="tab" aria-selected="false" data-l="sec">Security</button>
+<button class="ct" type="button" role="tab" aria-selected="false" data-l="id">Identity</button>
+<button class="ct" type="button" role="tab" aria-selected="false" data-l="mon">Monitoring</button>
+</div>
+<div class="csp" id="csp" aria-live="polite"></div>
+<p class="cnote">Simplified diagram. No real names, addresses or IPs.</p>
+</div></section>
+
+<section id="project" class="rv"><p class="eyebrow">06 / Featured project</p><h2 data-t="SHALFA"></h2>
 <div class="pj gb sg">
 <div class="pjh"><div class="radar" aria-hidden="true"><i></i><i></i></div>
 <div><h3>SHALFA — Unmanned Surface Vehicle Prototype</h3><p class="meta">Embedded systems · Computer vision · Autonomous control</p><span class="safe">Safe mission simulation, no real weapons or hazardous materials</span></div></div>
@@ -310,17 +372,17 @@ section{padding-top:84px}
 <div class="chips" style="margin-top:20px"><span class="chip">Raspberry Pi 4</span><span class="chip">Python</span><span class="chip">YOLOv5</span><span class="chip">MLX90640 Thermal Sensor</span><span class="chip">GPS</span><span class="chip">Web Interface</span><span class="chip">Differential Motor Control</span><span class="chip">Embedded Systems</span></div>
 </div></section>
 
-<section id="creds" class="rv"><p class="eyebrow">06 / Credentials</p><h2 data-t="Education, Certifications &amp; Languages"></h2>
+<section id="creds" class="rv"><p class="eyebrow">07 / Credentials</p><h2 data-t="Education, Certifications &amp; Languages"></h2>
 <div class="cg"><div class="card gb sg tilt"><span class="tg">Accreditation</span><h3>Accredited Engineer</h3><p>Saudi Council of Engineers (SCE)</p></div><div class="card gb sg tilt"><span class="tg">Degree</span><h3>Bachelor of Science in Computer Engineering</h3><p>Al-Baha University · February 2021 – January 2026</p></div><div class="card gb sg tilt"><span class="tg">Course</span><h3>CCNA Enterprise Networking Coursework</h3><p>Experts Training Institute · 60-hour training course · TVTC Accredited No. 11226958 · January 2024</p></div><div class="card gb sg tilt"><span class="tg">Course</span><h3>Wireless Networks Training Certificate</h3><p>Experts Training Institute · 40-hour training course · TVTC Accredited No. 112223426 · November 2024</p></div><div class="card gb sg tilt"><span class="tg">Google</span><h3>System Administration and IT Infrastructure Services</h3><p>Google · October 2024 · Credential ID: KX16FDJGCTSM</p></div><div class="card gb sg tilt"><span class="tg">IBM</span><h3>Introduction to Cybersecurity Careers</h3><p>IBM · September 2024 · Credential ID: 4U306X87C54D</p></div><div class="card gb sg tilt"><span class="tg">Workshop</span><h3>Fihm AI Workshops</h3><p>Fihm.ai · September 2024</p></div><div class="card gb sg tilt"><span class="tg">Languages</span><h3>Arabic · English</h3><p>Arabic: Native<br>English: Professional Working Proficiency</p></div></div></section>
 
-<section id="contact" class="rv"><p class="eyebrow">07 / Contact</p><h2 data-t="Let's talk"></h2>
+<section id="contact" class="rv"><p class="eyebrow">08 / Contact</p><h2 data-t="Let's talk"></h2>
 <p class="lead sg">Open to infrastructure, systems and network roles. Saudi Arabia.</p>
 <a class="big sg" href="mailto:faris.al7077@gmail.com">faris.al7077@gmail.com</a>
 <div class="btns sg"><a class="btn f mag" href="mailto:faris.al7077@gmail.com">Email me</a><a class="btn mag" href="https://wa.me/966570772870" target="_blank" rel="noopener">WhatsApp</a><button class="btn mag" id="cp" type="button">Copy email</button></div>
 <div class="links sg">
 <a href="mailto:faris.al7077@gmail.com">Email <span>faris.al7077@gmail.com</span></a>
 <a href="https://www.linkedin.com/in/faris-al-danish-3b4ba52a4/" target="_blank" rel="noopener">LinkedIn <span>faris-al-danish</span></a>
-<a href="https://github.com/Faris-Alghamdi7" target="_blank" rel="noopener">GitHub <span>Faris-Alghamdi7</span></a>
+<a href="https://github.com/Faris-Al-Danish" target="_blank" rel="noopener">GitHub <span>Faris-Al-Danish</span></a>
 <a href="tel:+966570772870">Phone <span dir="ltr">+966 57 077 2870</span></a>
 </div></section>
 </main>
@@ -385,6 +447,22 @@ var r=tl.getBoundingClientRect(),p=Math.max(0,Math.min(1,(innerHeight*.65-r.top)
 if(!still&&y<innerHeight*1.2){hw.style.transform='translateY('+(y*.18)+'px)';hw.style.opacity=Math.max(0,1-y/(innerHeight*.8))}
 boost+=Math.max(-.05,Math.min(.05,(y-lastY)*.0007));lastY=y}
 addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(onS)}},{passive:true});onS();
+/* case study */
+(function(){var svg=$('#csv');if(!svg)return;var P=$('#csp'),btns=$$('.ct'),box=$('.cs');
+var D={all:['Eight branches, one network','One head office connected to eight branches: connected, secured, identity-managed and monitored from one place.','Core enterprise services and POS systems kept at 99.9% uptime.','Structured Windows Server backups and system state recovery plans as the safety net.'],
+conn:['Connectivity','Secure VPN tunnels link every branch to the head office.','VLAN segmentation keeps traffic organised and separated.','Network devices and firewalls configured and maintained across the offices.'],
+sec:['Security','Firewalls and network devices configured and maintained to protect the network.','VLAN segmentation separates network segments.','Security compliance enforced centrally through Group Policy.'],
+id:['Identity and management','Windows Server and Active Directory domain controllers at the core.','GPOs deliver security compliance and software deployment to every branch.','PowerShell scripts automate user provisioning and routine admin tasks.'],
+mon:['Monitoring','Zabbix and Grafana watch server health: CPU, RAM and disk.','Network devices, VPN tunnels and internet links are monitored for bottlenecks before users notice.','POS systems in the branches are monitored so problems get fixed fast, within SLA.']};
+var order=['all','conn','sec','id','mon'],cur=0,timer=null,seen=false;
+function show(k){svg.setAttribute('data-l',k);var d=D[k];P.innerHTML='<h3>'+d[0]+'</h3><ul>'+d.slice(1).map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>';P.classList.remove('sw');void P.offsetWidth;P.classList.add('sw');
+btns.forEach(function(b){var on=b.dataset.l===k;b.classList.toggle('on',on);b.setAttribute('aria-selected',on)});cur=order.indexOf(k)}
+function play(){if(still||timer)return;timer=setInterval(function(){show(order[(cur+1)%order.length])},4600)}
+function stop(){clearInterval(timer);timer=null}
+btns.forEach(function(b){b.addEventListener('click',function(){stop();show(b.dataset.l)})});
+show('all');
+new IntersectionObserver(function(es){if(es[0].isIntersecting){if(!seen){seen=true;play()}}else stop()},{threshold:.35}).observe(box);
+})();
 /* globe */
 var cv=$('#gl'),cx=cv.getContext('2d'),W,H,cxp,cyp,R,N,pts=[],lk=[],br=[],pk=[],run=true,raf=0,ay=.6,ax=.4,mxn=0,myn=0,tmx=0,tmy=0,P=[];
 function build(){N=innerWidth<700?110:165;pts=[];for(var i=0;i<N;i++){var y=1-2*(i+.5)/N,r=Math.sqrt(1-y*y),th=i*2.399963;pts.push({x:Math.cos(th)*r,y:y,z:Math.sin(th)*r})}
