@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://faris-al-danish.github.io/sitemap.xml
